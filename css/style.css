@@ -435,7 +435,7 @@ html{
     position: absolute;
     top: -18px;
     left: 107px;
-    background-image: url("../img/star-icon.png");
+    background: url("../img/star-icon.png") no-repeat center;
 }
 .intro__results-project::before{
     content: '';
@@ -444,7 +444,7 @@ html{
     position: absolute;
     top: -18px;
     left: 107px;
-    background-image: url("../img/list-icon.png");
+    background: url("../img/list-icon.png") no-repeat center;
 }
 .intro__results-client::before{
     content: '';
@@ -453,7 +453,7 @@ html{
     position: absolute;
     top: -18px;
     left: 107px;
-    background-image: url("../img/dimond-icon.png");
+    background: url("../img/dimond-icon.png") no-repeat center;
 }
 
 .intro__results-service{
