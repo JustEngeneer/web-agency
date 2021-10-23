@@ -418,51 +418,40 @@ html{
     flex-wrap: wrap;
     justify-content: center;
 }
-.intro__results-all{
+.intro__results-block{
     border: 2px solid white;
+    border-top-style: none;
     min-width: 252px;
     min-height: 161px;
     margin-right: 60px;
     margin-bottom: 50px;
-}
-.intro__results-all:last-child{
-    margin-right: 0;
-}
-.intro__results-service::before{
-    content: '';
-    width: 38px;
-    height: 36px;
-    position: absolute;
-    top: -18px;
-    left: 107px;
-    background: url("../img/star-icon.png") no-repeat center;
-}
-.intro__results-project::before{
-    content: '';
-    width: 38px;
-    height: 36px;
-    position: absolute;
-    top: -18px;
-    left: 107px;
-    background: url("../img/list-icon.png") no-repeat center;
-}
-.intro__results-client::before{
-    content: '';
-    width: 38px;
-    height: 36px;
-    position: absolute;
-    top: -18px;
-    left: 107px;
-    background: url("../img/dimond-icon.png") no-repeat center;
+    position: relative;
 }
 
-.intro__results-service{
-    position: relative;
+.intro__results-block:last-child{
+    margin-right: 0;
 }
-.intro__results-project{
-    position: relative;
+.intro-psevdo{
+    width: 15.08%;
+    height: 36px;
+    top: -15px;
+    left: 107px;
+    position: absolute;
+}    
+.intro-psevdo::before,
+.intro-psevdo::after{
+    content: '';
+    position: absolute;
+    top: 42%;
+    width: 100px;
+    height: 2px;
+    background-color: white;
 }
-.intro__results-client{
-    position: relative;
+.intro-psevdo::before{
+    left: -109px;
 }
+.intro-psevdo::after{
+    right: -105px;
+}
+
 /* intro end */
