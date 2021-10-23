@@ -386,7 +386,8 @@ html{
 }
 /* intro start */
 .intro{
-    height: 810px;
+    min-height: 100vh;
+    /*height: 810px;*/
     padding-top: 198px;
     background: 
         linear-gradient( rgba(66, 53, 88, 0.67), rgba(66, 53, 88, 0.67)), 
@@ -400,7 +401,7 @@ html{
     text-align: center;
     color:white;
     max-width: 1076px;
-    max-height: 115px;
+    min-height: 115px;
     margin: 0 auto 52px auto;
 }
 .intro-text{
@@ -409,7 +410,59 @@ html{
     text-align: center;
     color:white;
     max-width: 830px;
-    max-height: 95px;
+    min-height: 95px;
     margin: 0 auto 67px auto;
+}
+.intro__results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.intro__results-all{
+    border: 2px solid white;
+    min-width: 252px;
+    min-height: 161px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+}
+.intro__results-all:last-child{
+    margin-right: 0;
+}
+.intro__results-service::before{
+    content: '';
+    width: 38px;
+    height: 36px;
+    position: absolute;
+    top: -18px;
+    left: 107px;
+    background-image: url("../img/star-icon.png");
+}
+.intro__results-project::before{
+    content: '';
+    width: 38px;
+    height: 36px;
+    position: absolute;
+    top: -18px;
+    left: 107px;
+    background-image: url("../img/list-icon.png");
+}
+.intro__results-client::before{
+    content: '';
+    width: 38px;
+    height: 36px;
+    position: absolute;
+    top: -18px;
+    left: 107px;
+    background-image: url("../img/dimond-icon.png");
+}
+
+.intro__results-service{
+    position: relative;
+}
+.intro__results-project{
+    position: relative;
+}
+.intro__results-client{
+    position: relative;
 }
 /* intro end */
