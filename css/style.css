@@ -365,7 +365,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-
 @font-face {
     font-family: 'Parangon530С';
     font-style: normal;
@@ -382,11 +381,27 @@ textarea {
         url('../fonts/pt-sans-caption-v13-latin_cyrillic/pt-sans-caption-v13-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
         url('../fonts/pt-sans-caption-v13-latin_cyrillic/pt-sans-caption-v13-latin_cyrillic-regular.woff2') format('woff2'); /* Super Modern Browsers */
   }
+ @font-face {
+	font-family: 'Futura-Normal';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/futura-normal/futura-normal.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/futura-normal/futura-normal.woff2') format('woff2'); /* Modern Browsers */
+}
+
+
 html{
     box-sizing: border-box;
 }
 *, *::before, *::after{
     box-sizing: inherit;
+}
+body{
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #000000;
 }
 .wrapper-all{
     max-width: 1250px;
@@ -395,7 +410,6 @@ html{
 /* intro start */
 .intro{
     min-height: 100vh;
-    /*height: 810px;*/
     padding-top: 198px;
     background: 
         linear-gradient( rgba(66, 53, 88, 0.67), rgba(66, 53, 88, 0.67)), 
@@ -466,18 +480,54 @@ html{
 .intro__results-measure{
     font-family:'Parangon530С', 'Arial', 'sans-serif';
     font-size: 48px;
+    line-height: 54px;
     text-align: center;
     color:white;
-    max-height: 37px;
-    margin: 0 auto 22px auto; /*70px;*/
+    margin: 0 auto;
+/*    max-height: 37px;
+    margin: 0 auto 22px auto; 
+*/    
 }
 .intro__results-desc{
     font-family:'PT Sans Caption', 'Arial', 'sans-serif';
     font-size: 18px;
+    line-height: 24px;
     text-align: center;
     color:white;
-    min-height: 20px;
     margin: 0 auto;
     /*margin-left: 34px;*/
 }
 /* intro end */
+
+/* Main menu start */
+.main__menu{
+    width: 100%;
+    min-height: 100px;
+    padding-top: 35px;
+    border-bottom: 2px solid lightgrey;
+}
+.main__menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main__menu-list:last-child{
+    margin-right: 10px;
+}
+.main__menu-item{
+    margin-left: 50px;
+}
+.main__menu-link{
+    font-family:'Futura-Normal', 'Arial', 'sans-serif';
+    font-size: 30px;
+    line-height: 36px;
+    text-decoration: none;
+}
+.main__menu-main-link{
+    color: #f6ae48;
+}
+.main__menu-all-link{
+    color: #000000;
+}
+/* Main menu end */
