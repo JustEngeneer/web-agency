@@ -367,13 +367,21 @@ textarea {
 
 
 @font-face {
-    font-family: 'Parangon';
+    font-family: 'Parangon530С';
     font-style: normal;
     font-weight: normal;
-    src: local('Parangon 530 C'), local('Parangon-530-C'),
-        url('../fonts/Parangon530C/Parangon530C.woff2') format('woff2'),
-        url('../fonts/Parangon530C/Parangon530C.woff') format('woff'),
+    src: url('../fonts/Parangon530C/Parangon530C.woff2') format('woff2'),
+        url('../fonts/Parangon530C/Parangon530C.woff') format('woff');
 }
+/* pt-sans-caption-regular - latin_cyrillic */
+@font-face {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+        url('../fonts/pt-sans-caption-v13-latin_cyrillic/pt-sans-caption-v13-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/pt-sans-caption-v13-latin_cyrillic/pt-sans-caption-v13-latin_cyrillic-regular.woff2') format('woff2'); /* Super Modern Browsers */
+  }
 html{
     box-sizing: border-box;
 }
@@ -396,8 +404,8 @@ html{
 }
 
 .intro-title{
+    font-family:'Parangon530С', 'Arial', 'sans-serif';
     font-size: 48px;
-    font-weight: normal;
     text-align: center;
     color:white;
     max-width: 1076px;
@@ -405,6 +413,7 @@ html{
     margin: 0 auto 52px auto;
 }
 .intro-text{
+    font-family:'PT Sans Caption', 'Arial', 'sans-serif';
     font-size: 24px;
     font-weight: normal;
     text-align: center;
@@ -425,6 +434,7 @@ html{
     min-height: 161px;
     margin-right: 60px;
     margin-bottom: 50px;
+    padding-top: 48px;
     position: relative;
 }
 
@@ -453,5 +463,21 @@ html{
 .intro-psevdo::after{
     right: -105px;
 }
-
+.intro__results-measure{
+    font-family:'Parangon530С', 'Arial', 'sans-serif';
+    font-size: 48px;
+    text-align: center;
+    color:white;
+    max-height: 37px;
+    margin: 0 auto 22px auto; /*70px;*/
+}
+.intro__results-desc{
+    font-family:'PT Sans Caption', 'Arial', 'sans-serif';
+    font-size: 18px;
+    text-align: center;
+    color:white;
+    min-height: 20px;
+    margin: 0 auto;
+    /*margin-left: 34px;*/
+}
 /* intro end */
