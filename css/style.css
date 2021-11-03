@@ -500,9 +500,6 @@ body{
     text-align: center;
     color:white;
     margin: 0 auto;
-/*    max-height: 37px;
-    margin: 0 auto 22px auto; 
-*/    
 }
 .intro__results-desc{
     font-family:'PT Sans Caption', 'Arial', 'sans-serif';
@@ -511,7 +508,6 @@ body{
     text-align: center;
     color:white;
     margin: 0 auto;
-    /*margin-left: 34px;*/
 }
 /* intro end */
 
@@ -554,6 +550,8 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
+    background: url('../img/about-background.png') no-repeat center;
+    background-size: 580px 245px ;
 }
 .about__title{
     font-family: 'Helvetica-Neue-Bold', 'Arial', 'sans-serif';
@@ -572,6 +570,39 @@ body{
     margin-right: 100px;
 }
 /* About end */
+
+/* Stages start */
+.stages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    height: 600px;
+}
+.stages__element{
+    grid-column: span 1;
+    font-family:'ArialMT', 'Arial', 'sans-serif';
+}
+.stages__title{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    margin: 0 0 15px 5px;
+}
+.stages__desc{
+    font-size: 15px;
+    line-height: 26px;
+    margin-left: 5px;
+}
+.stages__start-pic{
+    margin: 5px 0 15px 5px;
+}
+.stages__motion-pic{
+    margin: 5px 0 28px 5px;
+}
+.stages__element-maintenance{
+
+}
+/* Stages end */
 
 /* Footer start */
 .footer{
