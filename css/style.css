@@ -388,6 +388,20 @@ textarea {
 	src: url('../fonts/futura-normal/futura-normal.woff') format('woff'), /* Modern Browsers */
 		 url('../fonts/futura-normal/futura-normal.woff2') format('woff2'); /* Modern Browsers */
 }
+@font-face {
+	font-family: 'Helvetica-Neue';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/HelveticaNeue/HelveticaNeueCyr-Roman.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/HelveticaNeue/HelveticaNeueCyr-Roman.woff2') format('woff2'); /* Modern Browsers */
+}
+@font-face {
+	font-family: 'Helvetica-Neue-Bold';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.woff2') format('woff2'); /* Modern Browsers */
+}
 
 
 html{
@@ -537,6 +551,25 @@ body{
 /* About start */
 .about{
     min-height: 520px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+.about__title{
+    font-family: 'Helvetica-Neue-Bold', 'Arial', 'sans-serif';
+    font-size: 48px;
+    line-height: 60px;
+    grid-column: span 1;
+    padding-top: 210px;
+    margin-left: 5px;
+}
+.about__desc{
+    font-family: 'Helvetica-Neue', 'Arial', 'sans-serif';
+    font-size: 20px;
+    line-height: 30px;
+    grid-column: span 2;
+    padding-top: 175px;
+    margin-right: 100px;
 }
 /* About end */
 
