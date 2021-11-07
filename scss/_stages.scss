@@ -1,0 +1,67 @@
+/* Stages start */
+.stages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    height: 600px;
+
+    &-maintenance-wrap{
+        margin-left: 20px;
+        margin-right: 24px;
+}
+    &__element{
+        grid-column: span 1;
+        font-family:'ArialMT', 'Arial', 'sans-serif';
+
+        &_maintenance{
+            width: 400px;
+            height: 360px;
+            color: $whiteAbsolute;
+            background-color: $orangeAll;
+        }
+    }
+    &__title{
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: bold;
+        margin: 0 0 15px 5px;
+    }
+    &__desc{
+        font-size: 15px;
+        line-height: 26px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+    &__start-pic{
+        margin: 15px 0 15px 5px;
+    }
+    &__motion-pic{
+        margin: 15px 0 28px 5px;
+    }
+    &__lifeline-pic{
+        margin: 15px 0 29px 0;
+    }
+}
+.maintenance{
+    min-height: 37px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__cost{
+        font-size: 18px;
+        line-height: 33px;
+        text-align: center;
+        color: $whiteAbsolute;
+        min-width: 135px;
+        border: 2px solid $whiteAbsolute;
+    }
+    &__pic{
+        width: 22px;
+        height: 23px;
+        margin-right: 20px;
+    }
+}
+
+/* Stages end */

@@ -1,0 +1,36 @@
+/* Main menu start */
+.menu{
+    width: 100%;
+    min-height: 100px;
+    padding-top: 35px;
+    border-bottom: 2px solid lightgrey;
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+
+        &:last-child{
+            margin-right: 10px;
+        }
+    }
+    &__item{
+        margin-left: 50px;
+    }
+    &__link{
+        font-family:'Futura-Normal', 'Arial', 'sans-serif';
+        font-size: 30px;
+        line-height: 36px;
+        text-decoration: none;
+
+        &_first{
+            color: $orangeMenu;
+        }
+        &_all{
+            color: $blackAbsolute;
+        }
+    }
+    
+}
+/* Main menu end */

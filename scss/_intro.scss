@@ -1,0 +1,91 @@
+/* Intro menu start */
+.intro{
+    min-height: 100vh;
+    padding-top: 198px;
+    background: 
+        linear-gradient( $backgroundGradientFrom, $backgroundGradientTo), 
+        url("../img/intro-background.jpg") no-repeat center;
+    background-size: cover;
+
+    &__title{
+        font-family:'Parangon530С', 'Arial', 'sans-serif';
+        font-size: 48px;
+        line-height: 72px;
+        text-align: center;
+        color:$whiteAbsolute;
+        max-width: 1076px;
+        min-height: 115px;
+        margin: 0 auto 34px auto;
+    }
+    &__text{
+        font-family:'PT Sans Caption', 'Arial', 'sans-serif';
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: normal;
+        text-align: center;
+        color:$whiteAbsolute;
+        max-width: 830px;
+        min-height: 95px;
+        margin: 0 auto 60px auto;
+    }
+    &__results{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &-block{
+            border: 2px solid $whiteAbsolute;
+            border-top-style: none;
+            min-width: 252px;
+            min-height: 161px;
+            margin-right: 60px;
+            margin-bottom: 50px;
+            padding-top: 48px;
+            position: relative;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &-psevdo{
+            width: 15.08%;
+            height: 36px;
+            top: -15px;
+            left: 107px;
+            position: absolute;
+
+            &::before,
+            &::after{
+                content: '';
+                position: absolute;
+                top: 42%;
+                width: 100px;
+                height: 2px;
+                background-color: $whiteAbsolute;
+            }
+            &::before{
+                left: -109px;
+            }
+            &::after{
+                right: -105px;
+            }
+        }    
+        &-measure{
+            font-family:'Parangon530С', 'Arial', 'sans-serif';
+            font-size: 48px;
+            line-height: 54px;
+            text-align: center;
+            color:$whiteAbsolute;
+            margin: 0 auto;
+        }
+        &-desc{
+            font-family:'PT Sans Caption', 'Arial', 'sans-serif';
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color:$whiteAbsolute;
+            margin: 0 auto;
+        }
+    }
+}
+/* Intro menu end */

@@ -16,7 +16,7 @@
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#dad4d4">
     <!-- favicon end-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
     <main>
@@ -24,29 +24,29 @@
         <section>
             <div class="intro">
                 <div class="wrapper-all">
-                    <h2 class="intro-title">НАШИ САЙТЫ ЗАСТАВЛЯЮТ РАБОТАТЬ ВАШ БИЗНЕС.</h2>
-                    <p class="intro-text">
+                    <h2 class="intro__title">НАШИ САЙТЫ ЗАСТАВЛЯЮТ РАБОТАТЬ ВАШ БИЗНЕС.</h2>
+                    <p class="intro__text">
                         Большинство веб-студий считают окончанием работы загрузку 
                         сайта в интернет. Но почти никто не умеет делать проекты,
                         которые работают и приносят прибыль.
                     </p>
                     <div class="intro__results">
                         <div class="intro__results-block">
-                            <div class="intro-psevdo">
+                            <div class="intro__results-psevdo">
                                 <img class="intro__results-pic" src="./img/star-icon.png" alt="This is a star picture, really">
                             </div>   
                             <h2 class="intro__results-measure">518</h2> 
                             <p class="intro__results-desc">оказанных услуг</p>
                         </div>  
                         <div class="intro__results-block">
-                            <div class="intro-psevdo">
+                            <div class="intro__results-psevdo">
                                 <img class="intro__results-pic" src="./img/list-icon.png" alt="This is a list, really">
                             </div>    
                             <h2 class="intro__results-measure">345</h2> 
                             <p class="intro__results-desc">проектов</p>
                         </div>        
                         <div class="intro__results-block">
-                            <div class="intro-psevdo">
+                            <div class="intro__results-psevdo">
                                 <img class="intro__results-pic" src="./img/dimond-icon.png" alt="This is a dimond, really">
                             </div>    
                             <h2 class="intro__results-measure">218</h2> 
@@ -57,23 +57,23 @@
             </div>    
         </section>  
         <!-- Main menu -->
-        <nav class="main__menu">
+        <nav class="menu">
             <div class="wrapper-all">
-                <ul class="main__menu-list">
-                    <li class="main__menu-item">
-                        <a href="#!" class="main__menu-link main__menu-main-link">Главная</a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link menu__link_first">Главная</a>
                     </li>    
-                    <li class="main__menu-item">
-                        <a href="#!" class="main__menu-link main__menu-all-link">О нас</a>
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link menu__link_all">О нас</a>
                     </li>
-                    <li class="main__menu-item">
-                        <a href="#!" class="main__menu-link main__menu-all-link">Услуги</a>
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link menu__link_all">Услуги</a>
                     </li>
-                    <li class="main__menu-item">
-                        <a href="#!" class="main__menu-link main__menu-all-link">Наши работы</a>
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link menu__link_all">Наши работы</a>
                     </li>
-                    <li class="main__menu-item">
-                        <a href="#!" class="main__menu-link main__menu-all-link">Контакты</a>
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link menu__link_all">Контакты</a>
                     </li>
                 </ul>
             </div>    
@@ -116,7 +116,21 @@
                             системах, и, таким образом, позволяет увеличить его целевую посещаемость.
                         </p>
                     </div>
-                    <div class="stages__element stages__element-maintanence"></div>
+                    <div class="stages__element stages__element_maintenance">
+                        <div class="stages-maintenance-wrap">
+                            <img class="stages__lifeline-pic" src="img/stage-lifeline.png" alt="This is a lifeline, really">
+                            <h4 class="stages__title stages__title_maintenance">Поддержка</h4>
+                            <p class="stages__desc stages__desc_maintenance">
+                                У Вас уже работающий бизнес и Вы регулярно нуждаетесь в услугах веб-студии
+                                но брать сотрудника в штат и оборудовать дополнительное рабочее место не выгодно? 
+                                Мы готовы взять эти проблемы на себя и предоставлять нужные услуги удаленно.
+                            </p>
+                            <div class="maintenance">
+                                <p class="maintenance__cost">от 1000 руб</p>
+                                <img class="maintenance__pic" src="img/right-arrow-white.png" alt="This is right arrow, really">
+                            </div>
+                        </div>    
+                    </div>
                 </div>
             </div>
         </section>
@@ -148,10 +162,10 @@
                             </div>    
                             <!-- Footer -->
                             <div class="feedback__footer">
-                                <p class="feedback__input-footer-desc feedback__input-footer-text">
+                                <p class="feedback__footer-desc feedback__footer-text">
                                     Наши специалисты свяжутся с вами как можно скорее
                                 </p>
-                                <input type="submit" class="feedback__input-footer-submit feedback__input-footer-text" value="ОТПРАВИТЬ" name="feedbackInputSubmit">
+                                <input type="submit" class="feedback__footer-submit feedback__footer-text" value="ОТПРАВИТЬ" name="feedbackInputSubmit">
                             </div>
                     </form>
                     </div>

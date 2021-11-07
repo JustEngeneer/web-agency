@@ -1,0 +1,140 @@
+/* Footer start */
+.contacts{
+    min-height: 570px;
+    padding-top: 130px;
+    background: 
+        linear-gradient( $backgroundGradientFrom, $backgroundGradientTo), 
+        url("../img/footer-background.jpg") no-repeat center;
+    background-size: cover;
+}
+.feedback{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+
+    &__desc{
+        grid-column: span 1;
+        width: 100%;
+
+        &-title{
+            font-family:'PT Sans Caption', 'Arial', 'sans-serif';
+            font-size: 30px;
+            line-height: 48px;
+            text-align: left;
+            color:$whiteAbsolute;
+            width: 355px;
+            margin-bottom: 18px;
+            margin-left: 50px;
+        }    
+        &-text{
+            font-family:'ArialMT', 'Arial', 'sans-serif';
+            font-size: 18px;
+            line-height: 27px;
+            text-align: left;
+            color:$whiteAbsolute;
+            width: 355px;
+            min-height: 150px;
+            margin-left: 50px;
+        }
+    }
+    &__input{
+        grid-column: span 2;
+        width: 100%;
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &-user-name{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        &-text, &-text::placeholder{
+            font-family:'ArialMT', 'Arial', 'sans-serif';
+            font-size: 18px;
+            line-height: 30px;
+            color: $whiteAbsolute;
+        }
+        &-name{
+            width: 310px;
+            min-height: 50px;
+            padding-left: 20px;
+            vertical-align: center;
+            background: transparent;
+            border: 4px solid $whiteAbsolute;
+        }
+        &-surname{
+            width: 310px;
+            min-height: 50px;
+            padding-left: 20px;
+            vertical-align: center;
+            background: transparent;
+            border: 4px solid $whiteAbsolute;
+            border-left: none;
+            margin-right: 25px;
+        }
+        &-mail-wrap{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        &-mail{
+            width: 620px;
+            min-height: 50px;
+            padding-left: 20px;
+            vertical-align: center;
+            background: transparent;
+            border: 4px solid $whiteAbsolute;
+            border-top: none;
+            margin-right: 25px;
+        }
+        &-message-wrap{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        &-message{
+            width: 620px;
+            min-height: 165px;
+            padding-left: 20px;
+            vertical-align: top;
+            background: transparent;
+            border: 4px solid $whiteAbsolute;
+            border-top: none;
+            margin-bottom: 15px;
+            margin-right: 25px;
+        }
+    }
+    &__footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: top;
+        width: 100%;
+
+        &-text{
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 24px;
+            color: $whiteAbsolute;
+        }
+        &-desc{
+            font-family:'ArialMT', 'Arial', 'sans-serif';
+            margin: 0 100px 0 20px;
+        }
+        &-submit{
+            font-family:'Parangon530С', 'Arial', 'sans-serif';
+            width: 145px;
+            min-height: 45px;
+            border-radius: 12px;
+            border-style: solid;
+            background-color: $orangeAll; 
+            margin-right: 25px;
+        }
+    }
+}
+.stripe{
+    min-height: 110px;
+    background-color: $orangeAll;
+}
+/* Footer end */
