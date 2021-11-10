@@ -14,7 +14,7 @@
         font-family:'ArialMT', 'Arial', 'sans-serif';
 
         &_maintenance{
-            width: 400px;
+            max-width: 400px;
             height: 360px;
             color: $whiteAbsolute;
             background-color: $orangeAll;
@@ -45,7 +45,8 @@
 .maintenance{
     position: relative;
     min-height: 37px;
-
+    margin-bottom: 5px;
+    
     &__cost{
         font-family: 'Myriad-pro-regular', 'Arial', 'sans-serif';
         font-size: 18px;
