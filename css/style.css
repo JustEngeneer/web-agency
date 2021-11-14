@@ -965,6 +965,49 @@ body {
 }
 
 /* Services end */
+.seo {
+  min-height: 670px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.seo__item {
+  grid-column: span 1;
+}
+
+.seo__title {
+  font-family: 'Parangon530С', 'Arial', 'sans-serif';
+  font-size: 36px;
+  line-height: 72px;
+  width: 620px;
+  margin: 115px 0 30px 0;
+  padding-top: 10px;
+  padding-left: 95px;
+  background: url("../img/seo-background.png") no-repeat center;
+  -webkit-background-size: 620px 65px;
+          background-size: 620px 65px;
+}
+
+.seo__describe {
+  font-family: 'Arial', 'sans-serif';
+  font-size: 24px;
+  line-height: 48px;
+  margin-left: 75px;
+}
+
+.seo__google {
+  width: 205px;
+  height: 215px;
+  margin: 100px 20px 40px 205px;
+}
+
+.seo__yandex {
+  margin-left: 200px;
+  margin-right: 20px;
+}
+
 /* Footer start */
 .contacts {
   min-height: 570px;
