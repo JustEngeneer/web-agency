@@ -1,0 +1,94 @@
+.projects__title{
+    font-family:'Parangon530С', 'Arial', 'sans-serif';
+    font-size: 36px;
+    line-height: 72px;
+    text-align: center;
+    color: $whiteAbsolute;
+    min-height: 120px;
+    padding-top: 30px;
+    background: url('../img/our-projects.png') no-repeat center;
+    background-color: $darkBlue;
+}
+.projects__pictures{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+.project__picture{
+    width: 100%;
+    height: 100%;
+}
+.projects__picture{
+    position: relative;
+    overflow: hidden;
+    transition: .15s all;
+
+    &-orange{
+        padding-top: 90px;
+        background: 
+        linear-gradient( $backgroundGradient4, $backgroundGradient4), 
+        url("../img/project-4.png") no-repeat center;
+        background-size: contain;
+
+        &-title{
+            font-family: 'Exo2-regular', 'Arial', 'sans-serif';
+            font-size: 72px;
+            line-height: 72px;
+            color: $whiteAbsolute;
+            text-align: center;
+        }
+        &-name{
+            font-family: 'Exo2-regular', 'Arial', 'sans-serif';
+            font-size: 30px;
+            line-height: 36px;
+            color: $whiteAbsolute;
+            text-align: center;
+        }
+        &:hover{
+            background-size: cover;
+        }
+    }
+    &-size-big{
+        grid-column: span 2;
+        height: 425px;
+    }
+    &-size-small{
+        grid-column: span 1;
+        height: 325px;
+    }
+    &:hover .project__picture{
+        transform: scale(1.05);
+    }
+    &-link{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+    }
+}
+.more{
+    min-height: 120px;
+    background-color: $darkBlue;
+    padding-top: 27px;
+
+    &__button{
+        display: block;
+        font-family: 'Exo2-bold', 'Arial', 'sans-serif';
+        font-size: 24px;
+        line-height: 30px;
+        color: $whiteAbsolute;
+        min-height: 65px;
+        min-width: 240px;
+        background-color: $buttonMore;
+        border-color: transparent;
+        border-radius: 13px;
+        margin: 0 auto;
+
+        &:hover{
+            background-color: rgba(21, 24, 36, 0.4); 
+        }
+    }
+}

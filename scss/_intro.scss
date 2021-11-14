@@ -3,7 +3,7 @@
     min-height: 100vh;
     padding-top: 198px;
     background: 
-        linear-gradient( $backgroundGradient1, $backgroundGradient1) 
+        linear-gradient( $backgroundGradient1, $backgroundGradient1), 
         url("../img/intro-background.jpg") no-repeat center;
     background-size: cover;
 
@@ -87,5 +87,5 @@
             margin: 0 auto;
         }
     }
-}
+} 
 /* Intro menu end */

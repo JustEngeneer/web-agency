@@ -130,6 +130,10 @@
             border-style: solid;
             background-color: $orangeAll; 
             margin-right: 25px;
+
+            &:hover{
+                background-color: rgba(21, 24, 36, 0.4);             
+            }    
         }
     }
 }
