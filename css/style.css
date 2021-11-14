@@ -389,6 +389,14 @@ textarea {
 }
 
 @font-face {
+  font-family: 'Futura-bold';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/futura-bold/FuturaLT-Bold.woff") format("woff"), url("../fonts/futura-bold/FuturaLT-Bold.woff2") format("woff2");
+  /* Modern Browsers */
+}
+
+@font-face {
   font-family: 'Helvetica-Neue';
   font-weight: normal;
   font-style: normal;
@@ -455,10 +463,10 @@ body {
 .intro {
   min-height: 100vh;
   padding-top: 198px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 53, 88, 0.67)), to(rgba(66, 53, 88, 0.67))), url("../img/intro-background.jpg") no-repeat center;
-  background: -webkit-linear-gradient(rgba(66, 53, 88, 0.67), rgba(66, 53, 88, 0.67)), url("../img/intro-background.jpg") no-repeat center;
-  background: -o-linear-gradient(rgba(66, 53, 88, 0.67), rgba(66, 53, 88, 0.67)), url("../img/intro-background.jpg") no-repeat center;
-  background: linear-gradient(rgba(66, 53, 88, 0.67), rgba(66, 53, 88, 0.67)), url("../img/intro-background.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(48, 50, 99, 0.67)), to(rgba(48, 50, 99, 0.67))) url("../img/intro-background.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(48, 50, 99, 0.67), rgba(48, 50, 99, 0.67)) url("../img/intro-background.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(48, 50, 99, 0.67), rgba(48, 50, 99, 0.67)) url("../img/intro-background.jpg") no-repeat center;
+  background: linear-gradient(rgba(48, 50, 99, 0.67), rgba(48, 50, 99, 0.67)) url("../img/intro-background.jpg") no-repeat center;
   -webkit-background-size: cover;
           background-size: cover;
 }
@@ -745,10 +753,10 @@ body {
 .kredo {
   min-height: 565px;
   padding-top: 125px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 53, 88, 0.67)), to(rgba(66, 53, 88, 0.67))), url("../img/kredo-background.jpg") no-repeat center;
-  background: -webkit-linear-gradient(rgba(66, 53, 88, 0.67), rgba(66, 53, 88, 0.67)), url("../img/kredo-background.jpg") no-repeat center;
-  background: -o-linear-gradient(rgba(66, 53, 88, 0.67), rgba(66, 53, 88, 0.67)), url("../img/kredo-background.jpg") no-repeat center;
-  background: linear-gradient(rgba(66, 53, 88, 0.67), rgba(66, 53, 88, 0.67)), url("../img/kredo-background.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(48, 50, 99, 0.67)), to(rgba(48, 50, 99, 0.67))), url("../img/kredo-background.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(48, 50, 99, 0.67), rgba(48, 50, 99, 0.67)), url("../img/kredo-background.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(48, 50, 99, 0.67), rgba(48, 50, 99, 0.67)), url("../img/kredo-background.jpg") no-repeat center;
+  background: linear-gradient(rgba(48, 50, 99, 0.67), rgba(48, 50, 99, 0.67)), url("../img/kredo-background.jpg") no-repeat center;
   -webkit-background-size: cover;
           background-size: cover;
 }
@@ -817,15 +825,154 @@ body {
   left: 530px;
 }
 
+.services__items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 205px;
+  margin: 0 63px;
+}
+
+.services__item {
+  width: 365px;
+  height: 315px;
+  padding-top: 70px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.services__item_wrapper {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.services__item-title {
+  position: relative;
+  font-family: 'Exo2-bold', 'Arial', 'sans-serif';
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 44px;
+  color: #ffffff;
+  max-width: 270px;
+  height: 85px;
+  margin-bottom: 70px;
+  z-index: 2;
+}
+
+.services__item-title:after {
+  content: '';
+  position: absolute;
+  top: 105px;
+  left: 0;
+  width: 270px;
+  height: 2px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.services__item-title_land {
+  font-family: 'Futura-bold', 'Arial', 'sans-serif';
+}
+
+.services__item_landing {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("../img/services-landing.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/services-landing.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/services-landing.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/services-landing.jpg") no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.services__item_site {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("../img/services-site.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/services-site.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/services-site.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/services-site.jpg") no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.services__item_eshop {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("../img/services-eshop.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/services-eshop.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/services-eshop.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/services-eshop.jpg") no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.services__item-cost {
+  position: relative;
+}
+
+.services__item-cost-desc {
+  font-family: 'Myriad-pro-regular', 'Arial', 'sans-serif';
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+  min-height: 55px;
+  width: 200px;
+}
+
+.services__item-cost-land {
+  border: 3px solid #00b9e7;
+}
+
+.services__item-cost-site {
+  border: 3px solid #ffca00;
+}
+
+.services__item-cost-eshop {
+  border: 3px solid #66bf0d;
+}
+
+.services__item-cost-link {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/right-arrow-site.png") no-repeat 97% center;
+  text-decoration: none;
+  -webkit-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+  z-index: 5;
+}
+
+.services__item-cost-link:hover, .services__item-cost-link:focus {
+  background: url("../img/right-arrow-site.png") no-repeat right center;
+  outline: none;
+}
+
+.services__item-cost-link-land {
+  background: url("../img/right-arrow-landing.png") no-repeat 97% center;
+}
+
+.services__item-cost-link-land:hover, .services__item-cost-link-land:focus {
+  background: url("../img/right-arrow-landing.png") no-repeat right center;
+  outline: none;
+}
+
 /* Services end */
 /* Footer start */
 .contacts {
   min-height: 570px;
   padding-top: 130px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 53, 88, 0.67)), to(rgba(66, 53, 88, 0.67))), url("../img/footer-background.jpg") no-repeat center;
-  background: -webkit-linear-gradient(rgba(66, 53, 88, 0.67), rgba(66, 53, 88, 0.67)), url("../img/footer-background.jpg") no-repeat center;
-  background: -o-linear-gradient(rgba(66, 53, 88, 0.67), rgba(66, 53, 88, 0.67)), url("../img/footer-background.jpg") no-repeat center;
-  background: linear-gradient(rgba(66, 53, 88, 0.67), rgba(66, 53, 88, 0.67)), url("../img/footer-background.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 49, 98, 0.66)), to(rgba(46, 49, 98, 0.66))), url("../img/footer-background.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(46, 49, 98, 0.66), rgba(46, 49, 98, 0.66)), url("../img/footer-background.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(46, 49, 98, 0.66), rgba(46, 49, 98, 0.66)), url("../img/footer-background.jpg") no-repeat center;
+  background: linear-gradient(rgba(46, 49, 98, 0.66), rgba(46, 49, 98, 0.66)), url("../img/footer-background.jpg") no-repeat center;
   -webkit-background-size: cover;
           background-size: cover;
 }

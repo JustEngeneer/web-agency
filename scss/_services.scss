@@ -37,6 +37,117 @@
             left: 530px;
         }
     }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 205px;
+        margin: 0 63px;
+    }
+    &__item{
+        width: 365px;
+        height: 315px;
+        padding-top: 70px;
+        margin-bottom: 20px;
+        z-index: 1;
 
+        &_wrapper{
+            width: 290px;
+            margin: 0 auto;
+        }
+        &-title{
+            position: relative;
+            font-family: 'Exo2-bold', 'Arial', 'sans-serif';
+            font-size: 42px;
+            font-weight: bold;
+            line-height: 44px;
+            color: $whiteAbsolute;
+            max-width: 270px;
+            height: 85px;
+            margin-bottom: 70px;
+            z-index: 2;
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: 105px;
+                left: 0;
+                width: 270px;
+                height: 2px;
+                border-bottom: 1px solid $whiteAbsolute;
+            }
+            &_land{
+                font-family: 'Futura-bold', 'Arial', 'sans-serif';
+            }
+        }    
+        &_landing{
+            background: 
+                linear-gradient( $backgroundGradient2, $backgroundGradient2),
+                url('../img/services-landing.jpg') no-repeat center;
+            background-size: cover;
+        }
+        &_site{
+            background: 
+                linear-gradient( $backgroundGradient2, $backgroundGradient2),
+                url('../img/services-site.jpg') no-repeat center;
+            background-size: cover;
+        }
+        &_eshop{
+            background: 
+                linear-gradient( $backgroundGradient2, $backgroundGradient2),
+                url('../img/services-eshop.jpg') no-repeat center;
+            background-size: cover;
+        }
+        &-cost{
+            position: relative;
+
+            &-desc{
+                font-family: 'Myriad-pro-regular', 'Arial', 'sans-serif';
+                font-size: 24px;
+                font-weight: normal;
+                line-height: 48px;
+                text-align: center;
+                color: $whiteAbsolute;
+                min-height: 55px;
+                width: 200px;
+            }
+            &-land{
+                border: 3px solid $borderLanding;
+            } 
+            &-site{
+                border: 3px solid $borderSite;
+            } 
+            &-eshop{
+                border: 3px solid $borderEshop;
+            } 
+
+            &-link{
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%; 
+                background: url('../img/right-arrow-site.png') no-repeat 97% center;
+                text-decoration: none;
+                transition: .2s all;
+                z-index: 5;
+        
+                &:hover, &:focus{
+                    background: url('../img/right-arrow-site.png') no-repeat right center;
+                    outline: none;
+                }
+
+                &-land{
+                    background: url('../img/right-arrow-landing.png') no-repeat 97% center;
+
+                    &:hover, &:focus{
+                        background: url('../img/right-arrow-landing.png') no-repeat right center;
+                        outline: none;
+                    }
+                }
+            }    
+        }
+    }
 }
 /* Services end */
