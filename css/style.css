@@ -452,6 +452,8 @@ body {
   line-height: 1.2;
   font-weight: normal;
   color: #000000;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .wrapper-all {
@@ -744,7 +746,7 @@ body {
 
 .maintenance__link:hover, .maintenance__link:focus {
   background: url("../img/right-arrow-white.png") no-repeat right center;
-  background-color: rgba(205, 209, 228, 0.4);
+  /*background-color: rgba(205, 209, 228, 0.4);*/
   outline: none;
 }
 
@@ -1122,6 +1124,128 @@ body {
 }
 
 .more__button:hover {
+  background-color: rgba(21, 24, 36, 0.4);
+}
+
+.adaptive {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  min-height: 765px;
+}
+
+.adaptive__info {
+  grid-column: span 1;
+  padding-top: 210px;
+}
+
+.adaptive__info-title {
+  font-family: 'Parangon530С', 'Arial', 'sans-serif';
+  font-size: 36px;
+  line-height: 72px;
+  min-width: 440px;
+  min-height: 60px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  padding-top: 10px;
+  padding-left: 50px;
+  background: url("../img/adaptive-title-background.png") no-repeat left;
+}
+
+.adaptive__info-desc {
+  font-family: 'Arial', 'sans-serif';
+  font-size: 24px;
+  line-height: 48px;
+  margin-left: 75px;
+}
+
+.tradein {
+  min-height: 675px;
+  padding-top: 65px;
+  padding-bottom: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.52)), to(rgba(0, 0, 0, 0.52))), url("../img/trade-in-background.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url("../img/trade-in-background.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url("../img/trade-in-background.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url("../img/trade-in-background.jpg") no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.tradein__title {
+  font-family: 'Parangon530С', 'Arial', 'sans-serif';
+  font-size: 48px;
+  line-height: 72px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tradein__block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 10px;
+  margin: 0 20px 20px 20px;
+}
+
+.tradein__block-item {
+  grid-column: span 1;
+}
+
+.tradein__block-item-title {
+  font-family: 'Parangon530С', 'Arial', 'sans-serif';
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  min-height: 70px;
+  padding-top: 20px;
+  padding-left: 95px;
+}
+
+.tradein__block-item-prog {
+  background: url("../img/trade-in-program-icon.png") no-repeat left;
+}
+
+.tradein__block-item-proc {
+  background: url("../img/trade-in-process-icon.png") no-repeat left;
+}
+
+.tradein__block-item-cond {
+  background: url("../img/trade-in-conditions-icon.png") no-repeat left;
+}
+
+.tradein__block-item-desc {
+  font-family: 'Arial', 'sans-serif';
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.tradein__form {
+  margin: 0 auto;
+}
+
+.tradein__form-evaluate-button {
+  display: block;
+  font-family: 'Exo2-bold', 'Arial', 'sans-serif';
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  min-height: 65px;
+  min-width: 330px;
+  background-color: #f6ae48;
+  border-color: transparent;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  margin: 0 auto;
+}
+
+.tradein__form-evaluate-button:hover {
   background-color: rgba(21, 24, 36, 0.4);
 }
 

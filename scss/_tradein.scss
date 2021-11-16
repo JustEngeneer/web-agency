@@ -1,0 +1,76 @@
+.tradein{
+    min-height: 675px;
+    padding-top: 65px;
+    padding-bottom: 20px;
+    background:
+    linear-gradient( $backgroundGradient5, $backgroundGradient5), 
+    url("../img/trade-in-background.jpg") no-repeat center;
+    background-size: cover;
+
+    &__title{
+        font-family:'Parangon530С', 'Arial', 'sans-serif';
+        font-size: 48px;
+        line-height: 72px;
+        color: $whiteAbsolute;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__block{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 10px;
+        margin: 0 20px 20px 20px;
+
+        &-item{
+            grid-column: span 1;
+
+            &-title{
+                font-family:'Parangon530С', 'Arial', 'sans-serif';
+                font-size: 30px;
+                line-height: 36px;
+                color: $whiteAbsolute;
+                min-height: 70px;
+                padding-top: 20px;
+                padding-left: 95px;
+            }
+            &-prog{
+                background: url('../img/trade-in-program-icon.png') no-repeat left;
+            }
+            &-proc{
+                background: url('../img/trade-in-process-icon.png') no-repeat left;
+            }
+            &-cond{
+                background: url('../img/trade-in-conditions-icon.png') no-repeat left;
+            }
+
+            &-desc{
+                font-family: 'Arial', 'sans-serif';
+                font-size: 18px;
+                line-height: 30px;
+                color: $whiteAbsolute;
+            }
+        }
+    }
+    &__form{
+        margin: 0 auto;
+
+        &-evaluate-button{
+            display: block;
+            font-family: 'Exo2-bold', 'Arial', 'sans-serif';
+            font-size: 24px;
+            line-height: 30px;
+            color: $whiteAbsolute;
+            min-height: 65px;
+            min-width: 330px;
+            background-color: $buttonEvaluate;
+            border-color: transparent;
+            border-radius: 20px;
+            margin: 0 auto;
+
+            &:hover{
+                background-color: rgba(21, 24, 36, 0.4); 
+            }
+        }    
+    }
+}
