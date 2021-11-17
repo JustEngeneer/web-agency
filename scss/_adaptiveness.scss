@@ -3,30 +3,50 @@
     grid-template-columns: repeat(2, 1fr);
     min-height: 765px;
 
-    &__info{
+    &__item{
         grid-column: span 1;
-        padding-top: 210px;
 
+        &_text{
+            padding-top: 210px;
+            padding-left: 20px;
+
+        }
         &-title{
             font-family:'Parangon530С', 'Arial', 'sans-serif';
             font-size: 36px;
-            line-height: 72px;
+            line-height: 60px;
             min-width: 440px;
-            min-height: 60px;
-            margin-left: 25px;
-            margin-bottom: 25px;
             padding-top: 10px;
-            padding-left: 50px;
+            padding-left: 55px;
             background: url('../img/adaptive-title-background.png') no-repeat left;
         }
         &-desc{
             font-family:'Arial', 'sans-serif';
             font-size: 24px;
             line-height: 48px;
-            margin-left: 75px;
+            padding-left: 75px;
         }
     }
     &__pic{
+        display: flex;
+        align-items:flex-end;
+        overflow: hidden;
+        padding-left: 20px;
+        padding-bottom: 165px;
 
+            &-smart{
+                max-height: 230px;
+                width: 19%;
+            }
+            &-tablet{
+                max-height: 345px;
+                width: 39%;
+                margin-left: 50px;
+            }
+            &-pc{
+                max-height: 435px;
+                width: 120%;
+                margin-left: 25px;
+            }
     }
 }
