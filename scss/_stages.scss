@@ -2,7 +2,6 @@
 .stages{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
     height: 600px;
 
     &-maintenance-wrap{
@@ -12,10 +11,11 @@
     &__element{
         grid-column: span 1;
         font-family:'ArialMT', 'Arial', 'sans-serif';
+        width: 100%;
+        margin-left: 10px;
 
         &_maintenance{
-            max-width: 400px;
-            height: 360px;
+            height: 66.35%;
             color: $whiteAbsolute;
             background-color: $orangeAll;
         }
@@ -79,5 +79,25 @@
         }
     }
 }
+@media screen and (max-width: 895px){
+    .stages{    
+        grid-template-columns: repeat(1, 1fr);
 
+        &__element{
+            width: 50%;
+            margin: 0 auto;
+        }  
+        /*  
+        &__start-pic{
+            margin: 15px auto;
+        }
+        &__motion-pic{
+            margin: 15px auto;
+        }
+        &__lifeline-pic{
+            margin: 15px auto;
+        }
+        */
+    }    
+}
 /* Stages end */

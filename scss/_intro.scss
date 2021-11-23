@@ -31,21 +31,19 @@
     &__results{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        max-width: 885px;
+        padding: 0 10px;
+        margin: 0 auto;
 
         &-block{
             border: 2px solid $whiteAbsolute;
             border-top-style: none;
-            min-width: 252px;
+            width: 252px;
             min-height: 161px;
-            margin-right: 60px;
             margin-bottom: 50px;
             padding-top: 48px;
             position: relative;
-
-            &:last-child{
-                margin-right: 0;
-            }
         }
         &-psevdo{
             width: 15.08%;
@@ -88,4 +86,11 @@
         }
     }
 } 
+
+@media screen and (max-width: 777px){
+    .intro__results{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 /* Intro menu end */

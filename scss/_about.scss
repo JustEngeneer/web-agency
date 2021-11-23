@@ -1,11 +1,12 @@
 /* About start */
 .about{
-    min-height: 520px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     background: url('../img/about-background.png') no-repeat center;
     background-size: 580px 245px ;
+    padding-bottom: 160px;
+    margin-bottom: 10px;
     
     &__title{
         font-family: 'Helvetica-Neue-Bold', 'Arial', 'sans-serif';
@@ -23,5 +24,48 @@
         padding-top: 175px;
         margin-right: 100px;
     }
+}
+@media screen and (max-width: 960px){
+    .about{
+        padding-bottom: 80px;
+
+        &__title{
+            padding-top: 105px;
+        }
+        &__desc{
+            padding-top: 85px;
+        }
+    }   
+}
+@media screen and (max-width: 767px){
+    .about{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 40px;
+
+        &__title{
+            grid-column: span 1;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+        &__desc{
+            grid-column: span 1;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+    }   
+}
+@media screen and (max-width: 500px){
+    .about{
+        padding-bottom: 20px;
+
+        &__title{
+            padding-top: 20px;
+        }
+        &__desc{
+            padding-top: 20px;
+        }
+    }   
 }
 /* About end */
