@@ -33,7 +33,6 @@
             text-align: left;
             color:$whiteAbsolute;
             width: 355px;
-            min-height: 150px;
             margin-left: 50px;
         }
     }
@@ -141,4 +140,76 @@
     min-height: 110px;
     background-color: $orangeAll;
 }
+
+@media screen and (max-width: 960px){
+    .contacts{
+        padding-top: 50px;
+    }
+    .feedback{
+        grid-template-columns: repeat(1, 1fr);
+
+        &__desc{
+            grid-column: span 1;
+
+            &-title{
+                width: 90%;
+                text-align: center;
+                margin-bottom: 18px;
+                margin: 0 auto;
+            }    
+            &-text{
+                width: 90%;
+                max-height: 150px;
+                margin: 0 auto 20px auto;
+            }
+        }
+        
+        &__input{
+            grid-column: span 1;
+            width: 100%;
+            align-items: center;
+    
+            &-user-name{
+                display: flex;
+                flex-wrap: none;
+                max-width: 632px;
+            }
+            
+            &-name{
+               margin-left: auto;
+            }
+            
+            &-surname{
+                margin-right:  auto;
+            }
+            
+            &-mail-wrap{
+                display: flex;
+                flex-wrap: none;
+                justify-content: center;
+                width: 100%;
+            }
+            
+            &-mail{
+                margin: 0 auto;
+                max-width: 620px;
+            }
+            
+            &-message-wrap{
+                display: flex;
+                flex-wrap: none;
+                justify-content: center;
+                width: 100%;
+            }
+            &-message{
+                margin: 0 auto 20px auto;
+            }
+        } 
+        &__footer{
+            max-width: 620px;
+            margin: 0 auto;
+        }
+    }    
+}
+
 /* Footer end */

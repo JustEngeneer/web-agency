@@ -92,3 +92,18 @@
         }
     }
 }
+@media screen and (max-width: 960px){
+    .projects__pictures{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .projects__picture-size-big{
+        max-width: 745px;
+        margin: 0 auto;
+    }
+    .projects__picture-size-small{
+        max-width: 370px;
+    }
+    .projects__picture-small-odd{
+        margin-left: auto;
+    }
+}
